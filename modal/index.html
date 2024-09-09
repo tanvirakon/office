@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <dialog open>
+        <dialog-component>
+            <dialog-item>
+                <dialog-trigger>
+                    <button>click</button>
+                </dialog-trigger>
+                <dialog-content>
+                    <dialog-header>
+                        <h3>Save as a new template</h3>
+                        <p>Please fill up the form below to create a new template.</p>
+                    </dialog-header>
+                    <form>
+                        <div style="padding: .7rem 1rem;">
+                            <div class="form-group">
+                                <label>Name</label>
+                                <input name="name" placeholder="Name"></input>
+                            </div>
+                            <div class="form-group">
+                                <label>Description</label>
+                                <textarea name="description" placeholder="Description"></textarea>
+                            </div>
+                        </div>
+                        <dialog-footer>
+                            <button>Save</button>
+                        </dialog-footer>
+                    </form>
+                </dialog-content>
+            </dialog-item>
+        </dialog-component>
+    </dialog>
+</body>
+<script src="script.js"></script>
+
+</html>
